@@ -15,6 +15,14 @@
 * 体验地址：https://huzongyao.github.io/vant-finance-mobile
 * 扫码体验：
 
+ ![image](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/mine/project_page_qr.png?raw=true)
+
+#### 效果如下
+| 1        	| 2           | 3  	| 4     |
+| ------ |:-------:| -----:| -----:|
+| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot1.png?raw=true)| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot2.png?raw=true)| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot3.png?raw=true)| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot4.png?raw=true) |
+
+
 #### 主要依赖
 * Vue: https://cn.vuejs.org/
 * Vant: https://youzan.github.io/vant/
