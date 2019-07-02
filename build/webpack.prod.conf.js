@@ -56,6 +56,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: config.build.index,
       template: 'index.html',
+      favicon: 'src/assets/vant.ico',
       inject: true,
       minify: {
         removeComments: true,

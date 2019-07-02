@@ -12,6 +12,8 @@
 * Axios 做网络请求操作(Demo项目暂时未使用)
 
 #### 开始体验
+* 体验地址：https://huzongyao.github.io/vant-finance-mobile
+* 扫码体验：
 
 #### 主要依赖
 * Vue: https://cn.vuejs.org/
