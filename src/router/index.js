@@ -12,6 +12,9 @@ import TabMine from '../view/main/tabs/TabMine';
 const SettingsPage = r => require.ensure([], () => r(require('../view/mine/SettingsPage')), 'SettingsPage');
 const IFrameWebPage = r => require.ensure([], () => r(require('../view/common/IFrameWebPage')), 'IFrameWebPage');
 const TestCasePage = r => require.ensure([], () => r(require('../view/mine/TestCasePage')), 'TestCasePage');
+const ForumPage = r => require.ensure([], () => r(require('../view/discover/ForumPage')), 'ForumPage');
+const MessagePage = r => require.ensure([], () => r(require('../view/mine/MessagePage')), 'MessagePage');
+const MessageDetail = r => require.ensure([], () => r(require('../view/mine/MessageDetail')), 'MessageDetail');
 
 const routes = [
   {path: '*', redirect: '/main'},
@@ -27,6 +30,9 @@ const routes = [
   {name: 'SettingsPage', component: SettingsPage},
   {name: 'IFrameWebPage', component: IFrameWebPage},
   {name: 'TestCasePage', component: TestCasePage},
+  {name: 'ForumPage', component: ForumPage},
+  {name: 'MessagePage', component: MessagePage},
+  {name: 'MessageDetail', component: MessageDetail},
 ];
 
 // 懒得写path，给他们自动生成一个，和name同名

@@ -3,7 +3,7 @@
     <div class="top-fixed">
       <van-nav-bar :title="$t('tab_products')" fixed :z-index="10"></van-nav-bar>
       <div class="nav-con navbar-con">
-        <van-tabs v-model="activeSort" class="sort-all" sticky animated @change="onTabChange">
+        <van-tabs v-model="activeSort" class="sort-all" sticky @change="onTabChange" line-width="33%">
           <van-tab :title="it_so.title" v-for="(it_so, idx) in sortItems" :key="idx">
             <div class="prod-item" v-for="(it_po,idx_p) in getProductList(idx)" :key="idx_p">
               <van-row>
@@ -16,7 +16,7 @@
                   <div class="prod-tag">期限{{it_po.days}}天</div>
                 </van-col>
               </van-row>
-              <van-progress :percentage="it_po.percent" color="#f44" class="prod-progress"></van-progress>
+              <van-progress :percentage="it_po.percent" color="#FF8C00" class="prod-progress"></van-progress>
             </div>
           </van-tab>
         </van-tabs>

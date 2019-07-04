@@ -5,7 +5,8 @@
       <van-image lazy-load src="https://img.yzcdn.cn/vant/cat.jpeg" class="head-img" fit="cover"></van-image>
       <div>愤怒的小猫</div>
       <div class="top-right">
-        <van-icon name="static/img/mine/mine_nav_message2.png" size="28px" style="margin-right: 6px"></van-icon>
+        <van-icon name="static/img/mine/mine_nav_message2.png" size="28px" style="margin-right: 6px"
+                  @click="onMessageClick"></van-icon>
         <van-icon name="static/img/mine/mine_nav_settings2.png" size="28px" @click="onSettingsClick"></van-icon>
       </div>
     </div>
@@ -40,7 +41,7 @@
       </div>
       <!--下方应用入口-->
       <van-row class="app-con">
-        <van-col span="8" v-for="(it,idx) in bottomApps" :key="idx" class="app-item">
+        <van-col span="8" v-for="(it,idx) in bottomApps" :key="idx" class="app-item click-box">
           <van-image v-if="it.flag" :src="'static/img/mine/'+it.flag" class="flag-icon"></van-image>
           <div>
             <van-image :src="'static/img/mine/'+it.icon" class="app-icon"></van-image>
@@ -71,6 +72,9 @@
       };
     },
     methods: {
+      onMessageClick() {
+        this._routePush('MessagePage');
+      },
       onSettingsClick() {
         this._routePush('SettingsPage')
       },
@@ -83,7 +87,6 @@
     margin: 12px 0;
     .app-item {
       border: 1px solid #f7f7f7;
-      background-color: white;
       text-align: center;
       position: relative;
       padding: 24px 0;

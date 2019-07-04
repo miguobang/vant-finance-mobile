@@ -18,8 +18,8 @@
  ![image](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/mine/project_page_qr.png?raw=true)
 
 #### 效果如下
-| 1        	| 2           | 3  	| 4     |
-| ------ |:-------:| -----:| -----:|
+| 1 | 2 | 3 | 4 |
+| :----: |:----:| :----:| :----:|
 | ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot1.png?raw=true)| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot2.png?raw=true)| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot3.png?raw=true)| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot4.png?raw=true) |
 
 

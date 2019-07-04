@@ -7,7 +7,7 @@
           <van-image class="swipe-img" :src="item.img" @click="swipeImageClick(item)" fit="fill"></van-image>
         </van-swipe-item>
       </van-swipe>
-      <div class="msg-con">
+      <div class="msg-con" @click="onMessageClick">
         <van-image src="static/img/home/icon_message_back.png" class="msg-image"></van-image>
         <div class="msg-text">3</div>
       </div>
@@ -42,7 +42,7 @@
     </div>
     <!--中部应用入口-->
     <van-row class="mid-app">
-      <van-col span="12" v-for="(it, idx) in middleApps" :key="idx" class="mid-item">
+      <van-col span="12" v-for="(it, idx) in middleApps" :key="idx" class="mid-item click-box">
         <img :src="'static/img/home/'+it.icon" class="line2-icon"/>
         <div>
           <div class="mid-title">{{it.title}}</div>
@@ -100,6 +100,9 @@
       };
     },
     methods: {
+      onMessageClick() {
+        this._routePush('MessagePage');
+      },
       swipeImageClick(item) {
       }
     }
@@ -166,7 +169,6 @@
     .mid-item {
       display: flex;
       align-items: center;
-      background-color: white;
       border: 1px solid #f7f7f7;
       padding: 10px;
       .line2-icon {
@@ -235,7 +237,7 @@
         width: 70%;
         font-size: 16px;
         height: 36px;
-        line-height: 36px;
+        line-height: 30px;
       }
     }
   }

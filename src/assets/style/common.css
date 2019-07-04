@@ -42,3 +42,11 @@
 .flex1 {
   flex: 1;
 }
+
+.click-box {
+  background-color: white;
+}
+
+.click-box:active {
+  background-color: #fafafa;
+}

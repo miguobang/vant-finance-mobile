@@ -2,11 +2,28 @@
   <div>
     <van-nav-bar :title="$t('tab_discovery')" fixed :z-index="10"></van-nav-bar>
     <div class="nav-con">
-      <van-image src="static/img/discovery/discovery_banner.jpg"></van-image>
-      <div>
+      <!--顶部图片-->
+      <van-image src="static/img/discovery/discovery_banner.jpg" class="banner-img"></van-image>
+      <!--中部内容-->
+      <div style="padding: 10px">
+        <div class="align-center commu-all"
+             :style="{'background-image':'url(static/img/home/fresher_ticket_back.png)'}">
+          <div class="commu-top">
+            <div class="commu-left">好帖推荐</div>
+            <div class="commu-right">2个活动奖励</div>
+          </div>
+          <div class="commu-mid">
+            <div class="commu-title">基金专题研报：政策发力市场持续 民办教育正当时</div>
+            <div class="light-txt commu-txt">
+              综合市场规模、增长速度、市场空间和企业的盈利能力等因素，职业教育和幼儿教育将会是最值得投资的板块，两者不仅具有相对较高的...
+            </div>
+          </div>
+          <van-button type="danger" round class="commu-btn" @click="_routePush('ForumPage')">进入社区</van-button>
+        </div>
       </div>
+      <!--下部应用入口-->
       <van-row class="line2-all">
-        <van-col span="12" v-for="(it, idx) in middleApps" :key="idx" class="line2-item">
+        <van-col span="12" v-for="(it, idx) in middleApps" :key="idx" class="line2-item click-box">
           <img :src="'static/img/discovery/'+it.icon" class="line2-icon"/>
           <div>
             <div class="line2-title">{{it.title}}</div>
@@ -36,11 +53,51 @@
 </script>
 
 <style scoped lang="scss">
+  .commu-all {
+    background-size: 100% 100%;
+    padding: 6px 16px 20px 16px;
+    .commu-mid {
+      width: 100%;
+      padding: 10px;
+      text-align: left;
+      .commu-title {
+        font-size: 16px;
+        margin-top: 14px;
+      }
+      .commu-txt {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+    .commu-btn {
+      margin-top: 10px;
+      width: 70%;
+      font-size: 16px;
+      height: 36px;
+      line-height: 30px;
+    }
+    .commu-top {
+      display: flex;
+      justify-content: space-between;
+      color: #FE7846;
+      .commu-right {
+        font-size: 14px;
+        border-radius: 20px;
+        padding: 0 6px;
+        border: 1px solid #FE7846;
+      }
+    }
+  }
+
+  .banner-img {
+    width: 100%;
+    height: 35vw;
+  }
+
   .line2-all {
     margin-bottom: 20px;
     .line2-item {
       display: flex;
-      background-color: white;
       border: 1px solid #f7f7f7;
       align-items: center;
       padding: 10px;
