@@ -37,7 +37,7 @@
             <div class="ins-txt light-txt">起投金额</div>
           </van-col>
         </van-row>
-        <van-button type="danger" round class="buy-btn">立即抢购</van-button>
+        <van-button type="danger" round class="buy-btn" @click="onBuyClick">立即抢购</van-button>
       </div>
     </div>
     <!--中部应用入口-->
@@ -100,6 +100,9 @@
       };
     },
     methods: {
+      onBuyClick() {
+        this._routePushQ('ProductDetail', {id: 1});
+      },
       onMessageClick() {
         this._routePush('MessagePage');
       },

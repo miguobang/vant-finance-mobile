@@ -15,6 +15,7 @@ const TestCasePage = r => require.ensure([], () => r(require('../view/mine/TestC
 const ForumPage = r => require.ensure([], () => r(require('../view/discover/ForumPage')), 'ForumPage');
 const MessagePage = r => require.ensure([], () => r(require('../view/mine/MessagePage')), 'MessagePage');
 const MessageDetail = r => require.ensure([], () => r(require('../view/mine/MessageDetail')), 'MessageDetail');
+const ProductDetail = r => require.ensure([], () => r(require('../view/product/ProductDetail')), 'ProductDetail');
 
 const routes = [
   {path: '*', redirect: '/main'},
@@ -32,6 +33,7 @@ const routes = [
   {name: 'TestCasePage', component: TestCasePage},
   {name: 'ForumPage', component: ForumPage},
   {name: 'MessagePage', component: MessagePage},
+  {name: 'ProductDetail', component: ProductDetail},
   {name: 'MessageDetail', component: MessageDetail},
 ];
 
