@@ -2,6 +2,21 @@
 一个基于 [Vant](https://youzan.github.io/vant/) 的UI Demo，主要是为了学习和记录基于 Vue/Vant 开发移动设备单页应用的相关知识。
 
 ### 详情
+
+#### 效果如下
+| 1 | 2 | 3 | 4 |
+| :----: |:----:| :----:| :----:|
+| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot1.png?raw=true)| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot2.png?raw=true)| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot3.png?raw=true)| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot4.png?raw=true) |
+
+#### 开始体验
+* 体验地址：https://huzongyao.github.io/vant-finance-mobile
+* 扫码体验：
+
+ ![image](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/mine/project_page_qr.png?raw=true)
+
+* Wiki: https://github.com/huzongyao/vant-finance-mobile/wiki
+
+#### 涉及类库
 记录和学习一些使用Vue来快速开发移动端HTML5页面的知识，主要包含：
 * HTML+CSS基本布局的使用
 * 基于Vue/Webpack开发，Vue模板，状态等的使用
@@ -10,18 +25,6 @@
 * VueI18n 做页面的多语言支持
 * Vant 各种组件的组合与使用
 * Axios 做网络请求操作(Demo项目暂时未使用)
-
-#### 开始体验
-* 体验地址：https://huzongyao.github.io/vant-finance-mobile
-* 扫码体验：
-
- ![image](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/mine/project_page_qr.png?raw=true)
-
-#### 效果如下
-| 1 | 2 | 3 | 4 |
-| :----: |:----:| :----:| :----:|
-| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot1.png?raw=true)| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot2.png?raw=true)| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot3.png?raw=true)| ![screenshot](https://github.com/huzongyao/vant-finance-mobile/blob/master/static/img/screen/screen_shot4.png?raw=true) |
-
 
 #### 主要依赖
 * Vue: https://cn.vuejs.org/
