@@ -3,11 +3,17 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-const state = {};
+const state = {
+  userInfo: null,
+};
 
 const getters = {};
 
-const mutations = {};
+const mutations = {
+  setUserInfo(state, data) {
+    state.userInfo = data;
+  },
+};
 
 const actions = {};
 

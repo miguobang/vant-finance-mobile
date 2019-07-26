@@ -9,6 +9,7 @@
         <van-cell :title="$t('language')" icon="flag-o" :value="$t(langOptions[currentLang])" size="large"
                   @click="onLangClick" is-link>
         </van-cell>
+        <van-cell title="Vant文档" is-link size="large" @click="onVantDocClick"></van-cell>
       </van-cell-group>
     </div>
     <!--语言弹窗-->
@@ -43,6 +44,9 @@
       };
     },
     methods: {
+      onVantDocClick() {
+        location.href = 'https://youzan.github.io/vant/mobile.html';
+      },
       onLangChange(val) {
         this.showLangPop = false;
         window.localStorage.setItem('language', val);

@@ -1,7 +1,32 @@
 import {Toast} from 'vant';
+import {mapState} from 'vuex';
 
 export default {
+  computed: {
+    ...mapState(['userInfo']),
+  },
+
   methods: {
+    _isLogin() {
+      return (this.userInfo != null && this.userInfo.userName);
+    },
+
+    _loginOr(func) {
+      if (this._isLogin()) {
+        if (func) {
+          func();
+        }
+      } else {
+        this._routeLogin();
+      }
+    },
+
+    /**
+     * 统一跳转
+     */
+    _routeLogin() {
+      this._routePush('LoginPage');
+    },
 
     _routeReplace(toName, params) {
       this.$router.replace({

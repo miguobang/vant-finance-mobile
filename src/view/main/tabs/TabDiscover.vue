@@ -18,7 +18,7 @@
               综合市场规模、增长速度、市场空间和企业的盈利能力等因素，职业教育和幼儿教育将会是最值得投资的板块，两者不仅具有相对较高的...
             </div>
           </div>
-          <van-button type="danger" round class="commu-btn" @click="_routePush('ForumPage')">进入社区</van-button>
+          <van-button type="danger" round class="commu-btn" @click="onCommuClick">进入社区</van-button>
         </div>
       </div>
       <!--下部应用入口-->
@@ -48,6 +48,13 @@
           {icon: 'discovery_app_icon5.png', title: '理财小公举', 'text': '算一算我的第一桶金'},
         ],
       };
+    },
+    methods: {
+      onCommuClick() {
+        this._loginOr(() => {
+          this._routePush('ForumPage');
+        })
+      }
     },
   }
 </script>

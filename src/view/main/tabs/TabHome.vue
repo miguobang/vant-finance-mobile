@@ -7,10 +7,17 @@
           <van-image class="swipe-img" :src="item.img" @click="swipeImageClick(item)" fit="fill"></van-image>
         </van-swipe-item>
       </van-swipe>
+      <!--消息按钮-->
       <div class="msg-con" @click="onMessageClick">
         <van-image src="static/img/home/icon_message_back.png" class="msg-image"></van-image>
         <div class="msg-text">3</div>
       </div>
+      <!--文本轮播-->
+      <van-swipe :autoplay="3000" vertical :show-indicators="false" class="swipe-text-con">
+        <van-swipe-item class="swipe-text-item" v-for="(it,idx) in textSwipes" :key="idx">
+          <div class="swipe-text-txt">{{it.text}}</div>
+        </van-swipe-item>
+      </van-swipe>
     </div>
     <!--新手专享-->
     <div class="fresher-all">
@@ -85,6 +92,11 @@
           {img: 'static/img/banner/banner3.jpg', link: ''},
           {img: 'static/img/banner/banner4.jpg', link: ''},
         ],
+        textSwipes: [
+          {text: '修复 DatetimePicker 使用 formatter 且为 time 类型时 confirm 事件参数错误的问题'},
+          {text: '修复 Tabs 在 sticky 模式下滚动回到顶部时存在 1 像素偏差的问题'},
+          {text: 'ActionSheet: 新增多个 less 变量'},
+        ],
         middleApps: [
           {icon: 'line2_icon1.png', title: '推荐有礼', 'text': '红包送不停'},
           {icon: 'line2_icon2.png', title: '每日签到', 'text': '积分等你加'},
@@ -113,6 +125,26 @@
 </script>
 
 <style scoped lang="scss">
+  .swipe-text-con {
+    height: 30px;
+    .swipe-text-item {
+      height: 30px;
+      display: flex;
+      background-color: #fff7cc;
+      align-items: center;
+      .swipe-text-txt {
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+        padding: 0 10px;
+        color: #f60;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
   .msg-con {
     position: absolute;
     top: 20px;
@@ -246,6 +278,7 @@
   }
 
   .swipe-img {
+    vertical-align: bottom;
     width: 100%;
     height: 50vw;
   }

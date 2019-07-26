@@ -16,6 +16,7 @@ const ForumPage = r => require.ensure([], () => r(require('../view/discover/Foru
 const MessagePage = r => require.ensure([], () => r(require('../view/mine/MessagePage')), 'MessagePage');
 const MessageDetail = r => require.ensure([], () => r(require('../view/mine/MessageDetail')), 'MessageDetail');
 const ProductDetail = r => require.ensure([], () => r(require('../view/product/ProductDetail')), 'ProductDetail');
+const LoginPage = r => require.ensure([], () => r(require('../view/login/LoginPage')), 'LoginPage');
 
 const routes = [
   {path: '*', redirect: '/main'},
@@ -28,6 +29,7 @@ const routes = [
       {name: 'mine', path: 'mine', component: TabMine, meta: {keepAlive: true}},
     ], meta: {keepAlive: true}
   },
+  {name: 'LoginPage', component: LoginPage},
   {name: 'SettingsPage', component: SettingsPage},
   {name: 'IFrameWebPage', component: IFrameWebPage},
   {name: 'TestCasePage', component: TestCasePage},

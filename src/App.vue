@@ -19,6 +19,22 @@
 
   export default {
     name: "app",
+    mounted() {
+      this.loadUserInfo();
+    },
+    methods: {
+      loadUserInfo() {
+        try {
+          // 读取用户信息
+          let infoStr = localStorage.getItem('userInfo');
+          if (infoStr) {
+            let info = JSON.parse(infoStr);
+            this.$store.commit('setUserInfo', info);
+          }
+        } catch (e) {
+        }
+      },
+    },
   }
 </script>
 
