@@ -4,7 +4,10 @@ import {Lazyload} from 'vant';
 import VueClipboards from 'vue-clipboards';
 import ScrollPosition from 'vue-keep-scroll-position'
 
-import 'vant/lib/index.css'
+import 'vant/lib/index.less'
+//使用本地的icon字体
+import 'vant/lib/icon/local.less';
+import './assets/style/common.less';
 
 import App from './App.vue';
 import VueMixin from './mixins/VueMixin';

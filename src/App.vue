@@ -12,11 +12,6 @@
 </template>
 
 <script>
-  //使用本地的icon字体
-  import 'vant/lib/icon/local.less';
-  import 'vant/lib/nav-bar/style/less';
-  import 'vant/lib/dialog/style/less';
-
   export default {
     name: "app",
     mounted() {
@@ -40,8 +35,6 @@
 
 
 <style scoped lang="scss">
-  @import './assets/style/common.css';
-
   #app {
     background-color: #f7f7f7;
     height: 100vh;

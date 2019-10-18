@@ -20,8 +20,6 @@
 </template>
 
 <script>
-  import 'vant/lib/tabbar-item/index.less'
-
   export default {
     name: "main-page",
     watch: {

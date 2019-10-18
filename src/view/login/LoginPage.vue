@@ -54,8 +54,6 @@
 </template>
 
 <script>
-  import 'vant/lib/field/style/less';
-
   export default {
     name: "login-page",
     data() {
